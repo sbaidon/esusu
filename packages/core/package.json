@@ -1,0 +1,19 @@
+{
+  "name": "@esusu/core",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.4",
+    "vitest": "^0.34.5"
+  },
+  "dependencies": {
+    "eslint-config-custom": "workspace:*",
+    "uuid": "^9.0.1",
+    "valibot": "^0.25.0"
+  }
+}

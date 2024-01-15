@@ -1,0 +1,11 @@
+{
+  "name": "@esusu/prettier-config",
+  "version": "1.0.0",
+  "main": "./prettier-config.json",
+  "peerDependencies": {
+    "prettier": "2.5.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
