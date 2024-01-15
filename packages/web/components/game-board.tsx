@@ -4,7 +4,7 @@ import { type GameSchema } from '@esusu/core/models'
 import { useEffect, useRef, useState } from 'react'
 import { randomUUID } from '@esusu/core/utils/random'
 import { TestIds } from '@esusu/core/testing/ids'
-import { COLORS_PER_PLAYER, HOVERED_COLORS_PER_PLAYER } from '@esusu/core/styles/colors'
+import { COLOR_CLASSES_PER_PLAYER, HOVERED_COLOR_CLASSES_PER_PLAYER } from '@esusu/core/styles/colors'
 import type { Move } from '@esusu/core/four-connect'
 import { FourConnect } from '@esusu/core/four-connect'
 import { Button } from '@/components/ui/button'
@@ -107,7 +107,7 @@ function Grid({ isGameFinished, fourConnect, move }: GridProps) {
 
   function getColor(row: number, column: number) {
     const position = fourConnect.board[row][column]
-    return COLORS_PER_PLAYER[position]
+    return COLOR_CLASSES_PER_PLAYER[position]
   }
 
   function onColumnEnter(column: number) {
@@ -121,7 +121,7 @@ function Grid({ isGameFinished, fourConnect, move }: GridProps) {
   function getHoverColor(columnIndex: number, rowIndex: number) {
     const row = fourConnect.getLastRowForMove(columnIndex)
     if (isColumnHovered(columnIndex) && rowIndex === row) {
-      return HOVERED_COLORS_PER_PLAYER[fourConnect.currentPlayer]
+      return HOVERED_COLOR_CLASSES_PER_PLAYER[fourConnect.currentPlayer]
     }
     return ''
   }

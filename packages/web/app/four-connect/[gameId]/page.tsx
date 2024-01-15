@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { base64ToJSON } from '@esusu/core/utils/base64'
 import type { GameSchema } from '@esusu/core/models'
 import { gameSchema } from '@esusu/core/models'
-import { GameBoard } from '@/components/ui/game-board'
+import { GameBoard } from '@/components/game-board'
 
 export const metadata: Metadata = {
   title: 'Four Connect | Playing'
