@@ -59,6 +59,8 @@ module.exports = {
     { pattern: /grid-cols-(1|2|3|4|5|6|7|8|9|10)/ }, 
     { pattern: /grid-rows-(1|2|3|4|5|6|7|8|9|10)/ }, 
     { pattern: /bg-green-200/ },
+    { pattern: /bg-green-300/ },
+    { pattern: /bg-yellow-200/ },
     { pattern: /bg-yellow-300/ },
     { pattern: /bg-gray-200/ }
   ]
