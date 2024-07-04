@@ -1,8 +1,6 @@
 ## Introduction
 
-Hello this is the challenge project for esusu recruiting!
-
-My goal with this project was to try and build something that is as production ready as possible taking into account the time constraints, the project is structured as a monorepo, this is overkill for this assignment but wanted to reuse as much as possible from previous projects that I have to save time.
+Project to test out SST & Next.js
 
 ### Infrastructure
 
